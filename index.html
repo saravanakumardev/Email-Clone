@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+    <!-- google fonts icon server link  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <!-- Header srt -->
+    <section class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-left">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                    <a href="#"><img src="images/logo.png" alt="logo"> Gmail </a>
+                </div>
+                <div class="header-middle">
+                    <span class="material-icons">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search Mail">
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </div>
+                <div class="header-right">
+                    <span class="material-icons">
+                        apps
+                    </span>
+                    <span class="material-icons">
+                        notifications
+                    </span>
+                    <span class="material-icons">
+                        account_circle
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header-end -->
+
+
+    <!-- ID srt -->
+    <section class="id-infra">
+        <div class="infra-contain">
+
+        </div>
+    </section>
+
+    <!-- body condent srt -->
+    <section class="main-body">
+        <div class="container">
+            <div class="slide-body">
+                <div class="sidebars">
+                    <button class="sidebar-compose">
+                        <span class="material-icons">
+                            add
+                        </span>
+                        compose
+                    </button>
+                    <div class="sidebarOption active">
+                        <span class="material-icons active">
+                            inbox
+                        </span>
+                        <h3 class="active">
+                            inbox
+                        </h3>
+                    </div>
+                    <div class="sidebarOption">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <h3>
+                            starred
+                        </h3>
+                    </div>
+                    <div class="sidebarOption">
+                        <span class="material-icons">
+                            access_time
+                        </span>
+                        <h3>
+                            snoozed
+                        </h3>
+                    </div>
+                    <div class="sidebarOption">
+                        <span class="material-icons">
+                            send
+                        </span>
+                        <h3>
+                            sent
+                        </h3>
+                    </div>
+                    <div class="sidebarOption">
+                        <span class="material-icons">
+                            label_important
+                        </span>
+                        <h3>
+                            important
+                        </h3>
+                    </div>
+                    <div class="sidebarOption">
+                        <span class="material-icons">
+                            note
+                        </span>
+                        <h3>
+                            Drafts
+                        </h3>
+                    </div>
+                    <div class="sidebarOption">
+                        <span class="material-icons">
+                            expand_more
+                        </span>
+                        <h3>
+                            more
+                        </h3>
+                    </div>
+                    <div class="sidebar-footer">
+                        <div class="sidebar_footericons">
+                            <span class="material-icons">
+                                person
+                            </span>
+                            <span class="material-icons">
+                                duo
+                            </span>
+                            <span class="material-icons">
+                                phone
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- email-list -->
+                <div class="email-list">
+                    <div class="emaillist-settings">
+                        <div class="emaillist-settingsleft">
+                            <input type="checkbox" id="selectAll">
+                            <span class="material-icons">
+                                arrow_drop_down
+                            </span>
+                            <span class="material-icons">
+                                redo
+                            </span>
+                            <span class="material-icons">
+                                move_vert
+                            </span>
+                        </div>
+                        <div class="emaillist-settingsright">
+                            <span class="material-icons">
+                                chevron_left
+                            </span>
+                            <span class="material-icons">
+                                chevron_right
+                            </span>
+                            <span class="material-icons">
+                                keyboard_hide
+                            </span>
+                            <span class="material-icons">
+                                settings
+                            </span>
+                        </div>
+                    </div>
+                    <div class="emailist-section">
+                        <button class="toggleButton" data-target="details1">
+                            <div class="section active">
+                                <span class="material-icons">
+                                    inbox
+                                </span>
+                                <h4>
+                                    primary
+                                </h4>
+                            </div>
+                        </button>
+                        <button class="toggleButton" data-target="details2">
+                            <div class="section">
+                                <span class="material-icons">
+                                    chevron_left
+                                </span>
+                                <h4>
+                                    people
+                                </h4>
+                            </div>
+                        </button>
+                        <button class="toggleButton" data-target="details3">
+                            <div class="section">
+                                <span class="material-icons">
+                                    local_offer
+                                </span>
+                                <h4>
+                                    promotions
+                                </h4>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="emaillist-list">
+                        <div id="details1" class="details">
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    linkdin job alarts
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        30+ canada jobs
+                                        <span class="email-row-description">Hi saravanan welcome You!</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    12.19pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        find your job offers
+                                        <span class="email-row-description">Developer Role</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    30 Aug
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    youtube
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        frshers apply
+                                        <span class="email-row-description">developer Role for You </span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        1 new developer role hireing
+                                        <span class="email-row-description">softwere developer</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="details2" class="details">
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    linkdin job alarts
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        30+ canada jobs
+                                        <span class="email-row-description">Hi saravanan welcome You!</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    12.19pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        find your job offers
+                                        <span class="email-row-description">Developer Role</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    30 Aug
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    youtube
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        frshers apply
+                                        <span class="email-row-description">developer Role for You </span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        1 new developer role hireing
+                                        <span class="email-row-description">softwere developer</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    linkdin job alarts
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        30+ canada jobs
+                                        <span class="email-row-description">Hi saravanan welcome You!</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    12.19pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        find your job offers
+                                        <span class="email-row-description">Developer Role</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    30 Aug
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    youtube
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        frshers apply
+                                        <span class="email-row-description">developer Role for You </span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        1 new developer role hireing
+                                        <span class="email-row-description">softwere developer</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="details3" class="details">
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    linkdin job alarts
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        30+ canada jobs
+                                        <span class="email-row-description">Hi saravanan welcome You!</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    12.19pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        find your job offers
+                                        <span class="email-row-description">Developer Role</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    30 Aug
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    youtube
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        frshers apply
+                                        <span class="email-row-description">developer Role for You </span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        1 new developer role hireing
+                                        <span class="email-row-description">softwere developer</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    10pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    linkdin job alarts
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        30+ canada jobs
+                                        <span class="email-row-description">Hi saravanan welcome You!</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    12.19pm
+                                </div>
+                                </p>
+                            </div>
+                            <div class="email-row">
+                                <div class="email-row-option">
+                                    <input type="checkbox">
+                                    <span class="material-icons">
+                                        star_border
+                                    </span>
+                                    <span class="material-icons">
+                                        label_important
+                                    </span>
+                                </div>
+                                <h3 class="row-tittle">
+                                    indeed
+                                </h3>
+                                <div class="emailrow-msg">
+                                    <h4>
+                                        find your job offers
+                                        <span class="email-row-description">Developer Role</span>
+                                    </h4>
+                                </div>
+                                <p>
+                                <div class="emailrow-time">
+                                    30 Aug
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

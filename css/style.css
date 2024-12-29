@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header */
+.header{ 
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px 0;
+}
+.container{
+    min-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left img{
+    object-fit: contain;
+    height: 35px;
+    width: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header-left a{
+    color:gray;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-left:10px ;
+}
+
+.header-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    width: 600px;
+}
+.material-icons{
+    color: gray;
+}
+.header-middle input{
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+.header-right{
+    display: flex;
+    padding-right:20px;
+}
+.header-right span{
+    cursor: pointer;
+    padding: 10px ;
+}
+
+/* body_sidebar */
+
+.sidebars{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right:20px ;
+}
+.sidebar-compose{
+    width: 150px;
+    margin-top: 15px;
+    margin-left:10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: gray;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: none ;
+    box-shadow: 0px 2px 5px -2px rgb(0,0,0 ,0.75);
+}
+.sidebar-compose span{
+    margin-right: 5px;
+}
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    color: #818181;
+}
+
+.sidebarOption .material-icons{
+    padding: 5px;
+}
+
+.sidebarOption h3{
+    flex:1;
+    margin-left:10px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.sidebarOption:hover,
+.sidebarOption:hover h3,
+.sidebarOption:hover .material-icons
+{
+    background-color: #fcecec;
+    color: #c04b37;  
+       
+}
+
+.sidebarOption .active{
+    color: #c04b37;  
+}
+
+.sidebar-footer{
+    display:flex;
+    justify-content: center;
+}
+.sidebar_footericons .material-icons{
+    margin: 7px;
+    cursor: pointer;
+}
+.sidebar_footericons .material-icons:hover{
+    color:#c04b37
+}
+
+/* mainbody strts */
+.slide-body{
+    display: flex;
+    height: 100vh;
+}
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.email-list{
+    flex: 1;
+    overflow: scroll;
+}
+.emaillist-settings{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: #fff;
+    z-index: 999;
+    padding: 8px;
+
+}
+.emaillist-settingsleft{
+    display: flex;
+    align-items: center;
+}
+
+.emaillist-settings .material-icons{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    border-bottom-width:2px;
+    padding: 8px;
+    min-width: 250px;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+    margin-right:2px;
+    border: 3px solid transparent;
+}
+
+.emailist-section{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+.section.active{
+    background-color: whitesmoke;
+    border-width: 3px;
+    color:red;
+    border-bottom: 3px solid red;
+}
+
+.section.active .material-icons{
+    color: red;
+}
+.section:hover .material-icons{
+    color: red;
+
+}
+
+.section:hover{
+    background-color: whitesmoke;
+    color: red;
+    border-bottom: 3px solid red;
+}
+button.toggleButton {   
+    border: none;
+    margin-right: 5px;
+}
+.details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+}
+.details1{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+  }
+.section h4{
+    font-size: 14px;
+    margin-left: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.email-row-option{
+    display: flex;
+    align-items: center;
+}
+.email-row-option .material-icons,input{
+    margin: 5px;
+}
+.email-row{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+    cursor: pointer;
+}
+.email-row:hover{
+    border-top:1px solid whitesmoke;
+    box-shadow:0  4px 4px -2px rgba(0,0,0,0.24);
+}
+.emailrow-msg{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 12px;
+}
+.emailrow-msg h4{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+.row-tittle{
+    font-size: 14px;
+    flex: 0.3;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.emailrow-time{
+    padding-right: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.email-row-description{
+    font-weight: 400;
+    color: gray;
+}
